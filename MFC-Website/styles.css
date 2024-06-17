@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    background-image: url(images/blacktexture3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-image: url(images/blacktexture3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    opacity: .9;
+    
+}
+
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+}
+
+nav a:hover{
+    color:rgb(214, 1, 200);
+    transform: translateY(-5px);
+    background-color: whitesmoke;
+}
+
+nav .logo{
+    padding-left: 60px;
+    margin-right:auto ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.logo{
+    width: 90px;
+    transition: .5s ease-in-out;
+    
+}
+.logo:hover{
+    transform: translateY(-5px);
+}
+.logo2{
+    display: none;
+    width: 90px;
+    
+}
+
+.close-sidebar,.open-sidebar{
+    display: none;
+}
+#sidebar-active{
+    display: none;
+}
+
+.backgroundphoto{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    transform: translateY(50px);
+    z-index: -1;
+    border-radius: 10px;
+    
+}
+
+.textbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn{
+    font-family: "Bebas Neue", sans-serif;
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    transition: 0.4s;
+    transform: translateY(340px);
+}
+
+.btn1{
+    font-family: "Bebas Neue", sans-serif;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-image: url(images/whitebackground.png);
+    transform: translateY(70px);
+    border: 3px solid black;
+    color: rgb(1, 1, 1);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: rgb(226, 208, 50);
+    transform: translateY(337px);
+}
+
+.btn1:hover{
+    transform: translateY(60px);
+}
+.heading1{
+    position: absolute;
+   
+    transform:translate(-60px,-25px);
+    text-shadow: 8px 10px #000000;
+    color: white;
+    font-size: 5rem;
+    transition: .5s ease-in-out;
+}
+.heading2{
+    position: absolute;
+    transform: translate(10px,25px);
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px #000000;
+    text-decoration-line: underline;
+    text-decoration-thickness:5px ;
+    text-decoration-color: rgb(255, 0, 247);
+    transition: .5s ease-in-out;
+    
+}
+.heading3{
+    position: absolute;
+    transform: translate(80px,85px);
+    text-shadow: 8px 10px #000000;
+    color: white;
+    font-size: 5rem;
+    transition: .5s ease-in-out;
+}
+
+.heading1:hover{
+    cursor: pointer;
+    transform:translateY(-35px);
+    color: rgb(255, 225, 0);
+}
+.heading2:hover{
+    cursor: pointer;
+    color: rgb(255, 225, 0);
+}
+
+.heading3:hover{
+    cursor: pointer;
+    transform:translateY(95px);
+    color: rgb(225, 0, 199);
+}
+
+.container-2nd{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(images/blacktexture3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container-2nd h1{
+    font-size: 4.1rem;
+    text-decoration-line: underline;
+    text-decoration-thickness:6px ;
+    color: rgb(0, 0, 0);
+    
+}
+
+.footer{
+    height: 200px;
+    background-image: url(images/whitebackground.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a{
+    padding: 0 40px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer a:hover{
+    color:rgb(214, 1, 200);
+    transform: translateY(-5px);
+}
+
+.footer-icons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+    gap:50px;
+
+}
+
+.footer-copyrights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.aboutme1{
+    
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.about-title{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-title:hover{
+    color: rgb(212, 0, 255);
+    cursor: pointer;
+}
+
+
+/* card is what is inside of the box */
+.card{
+    background-image: url(images/whitebackground.png);
+    width:50%;
+    margin-bottom: 200px;
+    border-radius: 15px;
+    
+    
+}
+.icons {
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icons .fa-discord {
+    transition: color 0.3s ease-in-out;
+}
+
+.icons .fa-youtube {
+    transition: color 0.3s ease-in-out;
+}
+
+.icons .fa-twitch {
+    transition: color 0.3s ease-in-out;
+}
+
+.icons .fa-x-twitter {
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-icons .fa-discord {
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-icons .fa-youtube {
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-icons .fa-twitch {
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-icons .fa-x-twitter {
+    transition: color 0.3s ease-in-out;
+}
+
+
+.footer-icons .fa-discord:nth-child(1):hover {
+    color: rgb(63, 52, 222);
+    cursor: pointer;
+}
+
+.footer-icons .fa-youtube:nth-child(2):hover {
+    color: rgb(218, 9, 9);
+    cursor: pointer;
+}
+
+.footer-icons .fa-twitch:nth-child(3):hover {
+    color: rgb(212, 0, 212);
+    cursor: pointer;
+}
+
+.footer-icons .fa-x-twitter:nth-child(4):hover {
+    color: rgb(0, 231, 204);
+    cursor: pointer;
+}
+
+.icons .fa-discord:nth-child(1):hover {
+    color: rgb(63, 52, 222);
+    cursor: pointer;
+}
+
+.icons .fa-youtube:nth-child(2):hover {
+    color: rgb(218, 9, 9);
+    cursor: pointer;
+}
+
+.icons .fa-twitch:nth-child(3):hover {
+    color: rgb(212, 0, 212);
+    cursor: pointer;
+}
+
+.icons .fa-x-twitter:nth-child(4):hover {
+    color: rgb(0, 231, 204);
+    cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .links-container{
+        
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top:0;
+        right:-100%;
+        z-index:10;
+        width:200px;
+        background-color: black;
+        box-shadow: -5px 0 px rgba(0,0,0,.25);
+        transition:.7s ease-out;
+        opacity: 0.8;
+    }
+
+    
+    .heading1{
+        font-size: 1.5rem;
+        text-shadow: 2px 2px #000000;
+        transform: translate(-12px,5px);
+    }
+    .heading2{
+        font-size: .8rem;
+        text-shadow: .7px .7px #000000;
+        transform: translateY(20px);
+        text-decoration-thickness:1.5px ;
+    }
+    .heading3{
+        font-size: 1.5rem;
+        text-shadow: 2px 2px #000000;
+        transform: translate(20px,40px);
+    }
+    .logo2{
+        display: block;
+        margin-left: auto;
+    }
+
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding:20px 30px;
+        justify-content: flex-start;
+    }
+
+    .close-sidebar,.open-sidebar{
+        padding:20px;
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+        right:0;
+        
+    }
+
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width:100%;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index:9;
+        
+    }
+    .btn{
+        font-size: 13px;
+        padding: 4px 5px;
+        transform: translateY(80px);
+    }
+
+    .btn1{
+        font-size: 1rem;
+    }
+    .btn:hover{
+        background-color: rgb(203, 11, 177);
+        transform: translateY(80px);
+    }
+    .heading1:hover{
+        color:rgb(246, 255, 0);
+        transform: translate(-12px,5px);
+    }
+
+    .heading3:hover{
+        font-size: 1.5rem;
+        text-shadow: 2px 2px #000000;
+        transform: translate(20px,40px);
+    }
+
+    .container-2nd h1{
+        font-size: 1.1rem;
+        text-decoration-line: underline;
+        text-decoration-thickness:3px ;
+        color: rgb(0, 0, 0);
+        
+    }
+
+    .container-2nd{
+        margin-top: 170px;
+    }
+
+    .card{
+        background-color: rgb(255, 255, 255);
+        width:60%;
+        margin-bottom: 200px;
+        
+        
+    }
+
+    .aboutme1{
+    
+        font-size: 1rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 100;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .icons{
+        font-size: 1rem;
+    }
+
+    .footer a{
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+    .footer{
+        display: flex;
+        padding:0;
+        height: 150px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
